@@ -32,10 +32,13 @@
 <!--BTC Widget-->
 <div class="btcchart">
 <h2 class="label" style="color: white;">BTC/USDT Live Chart</h2>
+
+<div class="topcontainerleft">
 <div class="tradingview-widget-container">
   <div id="tradingview_d2e3b"></div> 
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript" src="script/btcwidget.js"></script>
+</div>
 </div>
 </div>
 <!--/-->
@@ -43,14 +46,15 @@
 
 
 <!--BTC Buy/Sell Indicator-->
+<div class="topcontainerright">
 <div class="tradingview-widget-container" >
   <div class="tradingview-widget-container__widget"></div>  
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
   {
   "interval": "1W",
-  "width": "200",
+  "width": "150",
   "isTransparent": true,
-  "height": "325",
+  "height": "250",
   "symbol": "BINANCE:BTCUSDT",
   "showIntervalTabs": false,
   "locale": "en",
@@ -58,6 +62,7 @@
   
 }
   </script>
+</div>
 </div>
 
 <!--/-->
@@ -104,12 +109,21 @@ body {
 
 }
 
+.topcontainerleft{
+
+  float: left;
+}
+
+.topcontainerright {
+  margin-left: 67%;
+}
+
 
 .btcchart {
   padding-left: 15px;
-  padding-right: 15px;
+  
   padding-top: 80px;
-  padding-bottom: 15px;
+  ;
 }
 
 .headerarea {

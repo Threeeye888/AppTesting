@@ -1,7 +1,7 @@
  new TradingView.widget(
   {
   "width": "100%",
-  "height": "325px",  
+  "height": "250px",  
   "symbol": "BINANCE:BTCUSDT",
   "interval": "W",
   "timezone": "Etc/UTC",
