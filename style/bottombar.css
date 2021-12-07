@@ -1,0 +1,39 @@
+.navbar {
+  overflow: hidden;
+  background-color:  #13130B;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color:  #fffafa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.navbar a:hover {
+ 
+  color: #b2beb5;
+}
+.navbar a:active {
+ 
+  color: #b2beb5;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+

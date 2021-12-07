@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/86197b2719.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+  <link rel="stylesheet" type="text/css" href="style/bottombar.css" />
+  <link rel="stylesheet" type="text/css" href="style/burgermenu.css" />
+  <title>App</title>
+
+</head>
+
+<body>
+
+<!--Navbar-->
+<div class="navbar">
+ <a href="#home" class="fas solid fa-newspaper"></a>
+ <a href="#home" class="fas solid fa-home"></a>
+ <a href="#contact" class="fas solid fa-address-card"></a>
+</div>
+<!--/-->
+
+
+<div class="headerarea">
+<img class="logoo" src="image/b.png">
+
+
+
+<!--BTC Widget-->
+<div class="btcchart">
+<h2 class="label" style="color: white;">BTC/USDT Live Chart</h2>
+<div class="tradingview-widget-container">
+  <div id="tradingview_d2e3b"></div> 
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" src="script/btcwidget.js"></script>
+</div>
+</div>
+<!--/-->
+
+
+
+<!--BTC Buy/Sell Indicator-->
+<div class="tradingview-widget-container" >
+  <div class="tradingview-widget-container__widget"></div>  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1W",
+  "width": "200",
+  "isTransparent": true,
+  "height": "325",
+  "symbol": "BINANCE:BTCUSDT",
+  "showIntervalTabs": false,
+  "locale": "en",
+  "colorTheme": "dark"
+  
+}
+  </script>
+</div>
+
+<!--/-->
+
+
+
+
+
+
+
+
+<!--Burger Menu-->
+
+<div class="window">
+  <div class="header">
+    <div class="burger-container">      
+      <div id="burger">
+        <div class="bar topBar"></div>
+        <div class="bar btmBar"></div>
+      </div>
+    </div>
+    <div class="icon icon-apple"></div>
+    <ul class="menu">
+      <li class="menu-item"><a href="#">Login</a></li>
+      <li class="menu-item"><a href="#">Register</a></li>
+      <li class="menu-item"><a href="#">Report a Bug</a></li>      
+    </ul>
+    <script type="text/javascript" src="script/burgermenu.js"></script>
+  </div>  
+</div>     
+
+<!--/-->
+
+
+</div>
+</body>
+
+</html>
+
+<style type="text/css">
+body {
+  margin:0;
+  background-color:#1b1b1b;
+
+}
+
+
+.btcchart {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 80px;
+  padding-bottom: 15px;
+}
+
+.headerarea {
+  height: 200px;
+  width: 100%;
+  padding-top: 25px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px ;
+  background-image: linear-gradient(#080808 35%, #1b1b1b 65%);
+
+}
+
+.logoo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 25px;
+  padding-right: 20px;
+  height: 55px;
+  width: 55px;
+  
+}
+html {
+  height: 1500px;
+}
+
+.label, h2{
+  font-family: "Ek Mukta", sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+
+</style>
+
+
+<script type="text/javascript">
+
+
+
+
+</script>
