@@ -30,12 +30,14 @@
 
 
 <!--BTC Widget-->
+<h2 class="label">BTC/USDT Live Chart</h2>
+<div class="chartpadding">
 <div class="btcchart">
-<h2 class="label" style="color: white;">BTC/USDT Live Chart</h2>
 <div class="tradingview-widget-container">
   <div id="tradingview_d2e3b"></div> 
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript" src="script/btcwidget.js"></script>
+</div>
 </div>
 </div>
 <!--/-->
@@ -43,6 +45,7 @@
 
 
 <!--BTC Buy/Sell Indicator-->
+<div class="indicatorpadding">
 <div class="btcindicator">
 <div class="tradingview-widget-container" >
   <div class="tradingview-widget-container__widget"></div>  
@@ -59,6 +62,7 @@
   
 }
   </script>
+</div>
 </div>
 </div>
 
@@ -106,18 +110,34 @@ body {
 
 }
 
+.chartpadding {
 
-.btcchart {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 80px;
-  padding-bottom: 15px;
+
+}
+
+.indicatorpadding {
+
+  padding-left: 15px;
+}
+
+
+.btcchart {
+  border: solid 8px   #303030;
+  border-radius: 5px;
+
 }
 
 .btcindicator {
   padding-left: 15px;
-  margin-top: -120px;
+  margin-top: -108px;
   z-index: 99;
+  width: 200px;
+  border-left:solid 8px   #303030;
+  border-right: solid 8px   #303030;
+  border-bottom: solid 8px   #303030;
+  border-radius: 5px;
 }
 
 .headerarea {
@@ -147,8 +167,12 @@ html {
 .label, h2{
   font-family: "Ek Mukta", sans-serif;
   font-style: normal;
+  color: white;
+  font-weight: 100;
   letter-spacing: 1px;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 
