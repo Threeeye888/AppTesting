@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
   <link rel="stylesheet" type="text/css" href="style/bottombar.css" />
   <link rel="stylesheet" type="text/css" href="style/burgermenu.css" />
+  <link rel="stylesheet" type="text/css" href="style/import.css" />
   <title>Home</title>
 
 </head>
@@ -29,6 +30,16 @@
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" ></a>
+  <div class="sidebar-top">
+  <label class="label" for="cars">Choose A Widget</label>
+  <div class="space"></div>
+  <center><select name="cars" id="cars">
+    <option value="volvo"><a>Chart</a></option>
+    <option value="saab"><a>Indicator</a></option>
+    <option value="opel"><a>And</a></option>
+    <option value="audi"><a>What Nots</a></option>
+  </select></center>
+  </div>
   <div class="wrap">
   <img class="sbtesting" src="images/test.png">
   <img class="sbtesting" src="images/test.png">
@@ -53,6 +64,7 @@
 </div>
 </div>
 
+
 <div id="main">
   <button class="openbtn" id="openbtn1">☰</button>
 </div>
@@ -74,154 +86,9 @@
 
 
 <style type="text/css">
-body {
-  margin:0;
-  background-color:#1b1b1b;
-  font-family: "Lato", sans-serif;
-}
-
-.sbtesting {
-  width: 100px;
-  height:100px;
-  padding: 10px;
-}
-
-.wrap {
-  padding-left:25px;
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index:2;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.6s;
-  padding-top: 60px;
-  align-content: space-evenly;
-
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
 
 
-.openbtn {
-  font-size: 20px;  
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 18px;
-  position: fixed;
 
-}
-
-.openbtn:hover {
-  background-color: #444;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-html {
-  height: 1500px;
-}
-
-.ticker {
-  border-top: solid 2px #A2A0A1;
-  position:fixed;
-  bottom: 0;
-  left: 0; 
-  z-index: 1;
-}
-
-.chartpadding {
-
-  padding-left: 15px;
-  padding-right: 15px;
-
-}
-
-.indicatorpadding {
-
-  padding-left: 15px;
-}
-
-
-.btcchart {
-  border: solid 2px #A2A0A1;
-  border-radius: 5px;
-
-}
-
-.btcindicator {
-  padding-left: 15px;
-  margin-top: -108px;
-  z-index: 0;
-  width: 210px;
-  border-left:solid 2px #A2A0A1; 
-  border-right:solid 2px #A2A0A1;  
-  border-bottom: solid 2px #A2A0A1;
-  border-radius: 5px;
-  background-color: #151924;
- 
-
-  
-}
-
-.btcpng {
-  height: 150px;
-  width: 150px;
-  margin-left: 59%;
-  position: absolute;
-  top: 520px;
-
-
-}
-
-.headerarea {
-  height: 250px;
-  width: 100%;
-  padding-top: 25px;
-  border-bottom-right-radius:5px;
-  border-bottom-left-radius:5px ;
-  background-image: linear-gradient(#080808 35%, #1b1b1b 65%);
-
-}
-
-.logoo{
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-top: 25px;
-  padding-right: 20px;
-  height: 55px;
-  width: 55px;
-  
-}
 </style>
 
 
@@ -230,7 +97,7 @@ html {
 
 <script type="text/javascript">
 
-
+//Sidebar//
 document.getElementById("openbtn1").addEventListener("click", open_close);
 
 var menuState = 0 // close
@@ -249,5 +116,6 @@ function open_close() {
   }
   console.log(menuState);
 }
+/////
 
 </script>
