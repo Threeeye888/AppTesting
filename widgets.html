@@ -1,0 +1,65 @@
+<!--BTC Widget-->
+<h2 class="label">BTC/USDT Live Chart</h2>
+<div class="chartpadding">
+<div class="btcchart">
+<div class="tradingview-widget-container">
+  <div id="tradingview_d2e3b"></div> 
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" src="script/btcwidget.js"></script>
+</div>
+</div>
+</div>
+<!--/-->
+
+<!--BTC Buy/Sell Indicator-->
+<div class="indicatorpadding">
+<div class="btcindicator">
+<div class="tradingview-widget-container" >
+  <div class="tradingview-widget-container__widget"></div>  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1W",
+  "width": "200",
+  "isTransparent": true,
+  "height": "390",
+  "symbol": "BINANCE:BTCUSDT",
+  "showIntervalTabs": true,
+  "locale": "en",
+  "colorTheme": "dark"  
+}
+  </script>
+</div>
+</div>
+</div>
+
+<!--/-->
+
+<!--Ticker-->
+<div class="ticker">
+<div class="cryptohopper-web-widget" data-id="2" data-chart_color="#0000ff" data-background_color="#0000ff" data-price_format="2" data-theme="dark" data-realtime="on">
+<script src="https://www.cryptohopper.com/widgets/js/script"></script> 
+</div>
+</div>
+<!--/-->
+
+<!--Burger Menu-->
+
+<div class="window">
+  <div class="header">
+    <div class="burger-container">      
+      <div id="burger">
+        <div class="bar topBar"></div>
+        <div class="bar btmBar"></div>
+      </div>
+    </div>
+    <div class="icon icon-apple"></div>
+    <ul class="menu">
+      <li class="menu-item"><a href="#">Login</a></li>
+      <li class="menu-item"><a href="#">Register</a></li>
+      <li class="menu-item"><a href="#">Report a Bug</a></li>      
+    </ul>
+    <script type="text/javascript" src="script/burgermenu.js"></script>
+  </div>  
+</div>     
+
+<!--/-->

@@ -15,13 +15,6 @@
 
 <body>
 
-<!--Ticker-->
-<div class="ticker">
-<div class="cryptohopper-web-widget" data-id="2" data-chart_color="#0000ff" data-background_color="#0000ff" data-price_format="2" data-theme="dark" data-realtime="on">
-<script src="https://www.cryptohopper.com/widgets/js/script"></script> 
-</div>
-</div>
-<!--/-->
 
 <!--Navbar-->
 <div class="navbar">
@@ -30,102 +23,132 @@
  <a href="#contact" class="fas solid fa-address-card"></a>
 </div>
 <!--/-->
-
-
 <div class="headerarea">
-<!--img class="logoo" src="image/b.png"-->
+  <!--img class="logoo" src="image/b.png"-->
 
 
-
-<!--BTC Widget-->
-<h2 class="label">BTC/USDT Live Chart</h2>
-<div class="chartpadding">
-<div class="btcchart">
-<div class="tradingview-widget-container">
-  <div id="tradingview_d2e3b"></div> 
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript" src="script/btcwidget.js"></script>
-</div>
-</div>
-</div>
-<!--/-->
-
-
-
-<!--BTC Buy/Sell Indicator-->
-<div class="indicatorpadding">
-<div class="btcindicator">
-<div class="tradingview-widget-container" >
-  <div class="tradingview-widget-container__widget"></div>  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-  {
-  "interval": "1W",
-  "width": "200",
-  "isTransparent": true,
-  "height": "390",
-  "symbol": "BINANCE:BTCUSDT",
-  "showIntervalTabs": true,
-  "locale": "en",
-  "colorTheme": "dark"
-  
-}
-  </script>
-</div>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" ></a>
+  <div class="wrap">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
+  <img class="sbtesting" src="images/test.png">
 </div>
 </div>
 
-<!--/-->
-
-<img class= "btcpng" src="images/btc.png">
-
-
-
-
-
-
-
-
-
-
-<!--Burger Menu-->
-
-<div class="window">
-  <div class="header">
-    <div class="burger-container">      
-      <div id="burger">
-        <div class="bar topBar"></div>
-        <div class="bar btmBar"></div>
-      </div>
-    </div>
-    <div class="icon icon-apple"></div>
-    <ul class="menu">
-      <li class="menu-item"><a href="#">Login</a></li>
-      <li class="menu-item"><a href="#">Register</a></li>
-      <li class="menu-item"><a href="#">Report a Bug</a></li>      
-    </ul>
-    <script type="text/javascript" src="script/burgermenu.js"></script>
-  </div>  
-</div>     
-
-<!--/-->
-
-
+<div id="main">
+  <button class="openbtn" id="openbtn1">☰</button>
 </div>
 
 
+
+
+
+
+
+
+
+</div>
 
 </body>
 
 </html>
 
+
+
 <style type="text/css">
 body {
   margin:0;
   background-color:#1b1b1b;
+  font-family: "Lato", sans-serif;
+}
+
+.sbtesting {
+  width: 100px;
+  height:100px;
+  padding: 10px;
+}
+
+.wrap {
+  padding-left:25px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index:2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 60px;
+  align-content: space-evenly;
 
 }
 
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.openbtn {
+  font-size: 20px;  
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 18px;
+  position: fixed;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+html {
+  height: 1500px;
+}
 
 .ticker {
   border-top: solid 2px #A2A0A1;
@@ -157,7 +180,7 @@ body {
 .btcindicator {
   padding-left: 15px;
   margin-top: -108px;
-  z-index: 99;
+  z-index: 0;
   width: 210px;
   border-left:solid 2px #A2A0A1; 
   border-right:solid 2px #A2A0A1;  
@@ -180,7 +203,7 @@ body {
 }
 
 .headerarea {
-  height: 200px;
+  height: 250px;
   width: 100%;
   padding-top: 25px;
   border-bottom-right-radius:5px;
@@ -199,31 +222,32 @@ body {
   width: 55px;
   
 }
-html {
-  height: 1500px;
-}
-
-.label, h2{
-  font-family: "Ek Mukta", sans-serif;
-  font-style: normal;
-  color: white;
-  font-weight: 350;
-  letter-spacing: 1px;
-  text-align: left;
-  text-indent: 25px;
-  padding-top: 40px;
-  margin-bottom: 10px;
- 
-}
-
-
-
 </style>
+
+
+
 
 
 <script type="text/javascript">
 
 
+document.getElementById("openbtn1").addEventListener("click", open_close);
 
+var menuState = 0 // close
+function open_close() {
+  if(menuState === 0){
+     menuState = 1;
+     document.getElementById("mySidebar").style.width = "300px";
+     document.getElementById("main").style.marginLeft = "300px";
+    
+  }
+  else {
+     menuState = 0;
+     document.getElementById("mySidebar").style.width = "0";
+     document.getElementById("main").style.marginLeft = "0";
+   
+  }
+  console.log(menuState);
+}
 
 </script>
