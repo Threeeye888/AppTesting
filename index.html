@@ -16,80 +16,227 @@
 
 <body>
 
+<div class="headerarea">
 
-<!--Navbar-->
+ <!--Navbar-->
 <div class="navbar">
  <a href="news.html" class="fas solid fa-newspaper"></a>
  <a href="#home" class="fas solid fa-home"></a>
  <a href="#contact" class="fas solid fa-address-card"></a>
 </div>
 <!--/-->
-<div class="headerarea">
-  <!--img class="logoo" src="image/b.png"-->
 
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" ></a>
-  <div class="sidebar-top">
-  <label class="label" for="cars">Choose A Widget</label>
-  <div class="space"></div>
-  <center><select name="cars" id="cars">
-    <option value="volvo"><a>Chart</a></option>
-    <option value="saab"><a>Indicator</a></option>
-    <option value="opel"><a>And</a></option>
-    <option value="audi"><a>What Nots</a></option>
-  </select></center>
-  </div>
-  <div class="wrap">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-  <img class="sbtesting" src="images/test.png">
-</div>
-</div>
 
-
+<!--Sidebar-->
 <div id="main">
   <button class="openbtn" id="openbtn1">☰</button>
 </div>
 
+<div id="mySidebar" class="sidebar">
+ <script src="script/sidebar.js"></script>
+  <a href="javascript:void(0)" ></a>
+   <div class="sidebar-top">
+    <label class="label" for="cars">Choose A Widget</label>    
+   </div>
+  <div class="wrap">
+    
+     
+    <img onclick="dropDown() " class="dropbtn" src="images/chart.png"> 
+    <div id="myDropdown" class="dropdown-content">
+    <a onclick="showChart(), open_close()">Chart 1</a>
+    <a onclick="showChart2(), open_close()">Chart 2</a>
+    <a onclick="showChart3(), open_close()">Chart 3</a>
+    </div>        
+    <img onclick="showBs(), open_close()" src="images/indicator.png">
+    <img onclick="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+    <img class="" src="images/test.png">
+
+  </div>
+
+</div>
+<!--/-->
 
 
+<div id="mainbody">
 
 
+<!--Chart 1-->
+<div class="resize">
+<div id="chart" style="display: none;">
+<div class="chartpadding">
+<div class="btcchart">
+<div class="tradingview-widget-container">
+  <div id="tradingview_d2e3b"></div> 
+  <button onclick="closeChart()" id="remove"><a class="fa fa-trash"></a></button>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" src="script/chart1.js"></script>  
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/-->
+
+<!--Chart 2-->
+<div class="resize">
+<div id="chart2" style="display:none;">
+<div class="chartpadding">
+<div class="btcchart">
+<div class="tradingview-widget-container">
+  <div id="tradingview_d2e3b"></div> 
+  <button onclick="closeChart2()" id="remove"><a class="fa fa-trash"></a></button>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" src="script/chart2.js"></script>  
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/-->
+
+<!--Chart 3-->
+<div class="resize">
+<div id="chart3" style="display:none;">
+<div class="chartpadding">
+<div class="btcchart">
+<div class="tradingview-widget-container">
+  <div id="tradingview_d2e3b"></div> 
+  <button onclick="closeChart3()" id="remove"><a class="fa fa-trash"></a></button>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript" src="script/chart3.js"></script>  
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/-->
+
+<!--Buy/Sell Indicator-->
+<div class="resize">
+<div id="bs" style="display:none;">
+<div class="indicatorpadding">
+<div class="btcindicator">
+<div class="tradingview-widget-container" >
+  <div class="tradingview-widget-container__widget"></div>
+  <button onclick="closeBs()" id="remove"><a class="fa fa-trash"></a></button> 
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1W",
+  "width": "200",
+  "isTransparent": true,
+  "height": "390",
+  "symbol": "BINANCE:BTCUSDT",
+  "showIntervalTabs": true,
+  "locale": "en",
+  "colorTheme": "dark"  
+}
+  </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/-->
 
 
 
 
 </div>
+
+
+
+ </div>
 
 </body>
 
 </html>
 
+ <style type="text/css">
+
+h2 {
+  color: white;
+  
+  text-align: center;
+}
+
+#remove {
+  height: 2rem;
+  width: 2rem;
+ background-color: transparent;
+ border: 0.1rem solid white;
+ border-radius: 5px;
+ position: absolute;
+ right: 1.7rem;
+ margin-top: 0.25rem;
+ z-index: 1;
+}
 
 
-<style type="text/css">
+img:hover, img:focus {
+  background-color: lightgrey;
+ 
+}
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lightgrey;
+ 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: darkgrey;  color: black; font-weight: bold;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 
 
-</style>
+
+ </style>
 
 
 
@@ -97,25 +244,72 @@
 
 <script type="text/javascript">
 
-//Sidebar//
-document.getElementById("openbtn1").addEventListener("click", open_close);
+//Append/Close Chart 1//
 
-var menuState = 0 // close
-function open_close() {
-  if(menuState === 0){
-     menuState = 1;
-     document.getElementById("mySidebar").style.width = "300px";
-     document.getElementById("main").style.marginLeft = "300px";
-    
-  }
-  else {
-     menuState = 0;
-     document.getElementById("mySidebar").style.width = "0";
-     document.getElementById("main").style.marginLeft = "0";
-   
-  }
-  console.log(menuState);
+var ch = document.getElementById('chart')
+
+function showChart() {
+   ch.style.display = "block";
 }
-/////
+function closeChart() {
+   ch.style.display = "none";
+}
+////
+
+//Append/Close Chart 2//
+var ch2 = document.getElementById('chart2')
+
+function showChart2() {
+   ch2.style.display = "block";
+}
+function closeChart2() {
+   ch2.style.display = "none";
+}
+////
+
+//Append/Close Chart 3//
+var ch3 = document.getElementById('chart3')
+
+function showChart3() {
+   ch3.style.display = "block";
+}
+function closeChart3() {
+   ch3.style.display = "none";
+}
+////
+
+//Append/Close Indicator 1//
+var bs = document.getElementById('bs')
+
+function showBs() {
+   bs.style.display = "block";
+}
+function closeBs() {
+   bs.style.display = "none";
+}
+////
+
+
+
+//DropDown//
+function dropDown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+/* Close the dropdown menu if the user clicks outside of it */
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+////
+
 
 </script>
