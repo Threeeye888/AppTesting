@@ -4,12 +4,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.ticker {
-  border-top: solid 2px #A2A0A1;
-  position:fixed;
-  bottom: 0;
-  left: 0; 
-  z-index: 1;
+
+.btcindicator{
+  border: 2px solid white;
+  width: 200px;
+  height: 390px;
 }
 
 
@@ -132,11 +131,20 @@ html {
 .btcchart {
   
   border-radius: 5px;
-
+  
 
 }
 
-.resize {
+.resize {  
+  resize: both;
+  overflow: auto;
+  background-color: 10px solid white;
+
+}
+
+.resizeind {
+  width: 200px;
+  height: 390px;
   resize: both;
   overflow: auto;
 }
