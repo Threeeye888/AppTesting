@@ -173,15 +173,16 @@ html {
 .resize {  
   resize: both;
   overflow: auto;
-  border: 0.25rem solid transparent;
+ 
   height: 300px;
   width: auto;
-  padding: 0.5rem;
-  background-color: #808080;
+  padding: 0.6rem;
+  
 }
 
 ::-webkit-resizer {
   background-color: red;
+  border: 2px solid white;
 }
 
 
