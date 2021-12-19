@@ -183,7 +183,7 @@ html {
 ::-webkit-resizer {
   border: dashed #888888;
   border-width: 0 3px 3px 0;
-  display: inline-block;
+  display: block;
   outline: 25px solid white;
 }
 
