@@ -173,10 +173,11 @@ html {
 .resize {  
   resize: both;
   overflow: hidden;
-  border: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid white;
+  border-width: 50%;
   height: 300px;
   width: auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 
