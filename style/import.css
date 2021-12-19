@@ -176,7 +176,7 @@ html {
  
   height: 300px;
   width: auto;
-  padding: 0.825rem;
+  padding: 1rem;
   
 }
 
@@ -188,8 +188,7 @@ html {
 h2 {
   color: white;
   
-  text-align: center;
-}
+  text-align: center;}
 
 #remove {
   height: 2rem;
