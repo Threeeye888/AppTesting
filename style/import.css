@@ -172,12 +172,11 @@ html {
 
 .resize {  
   resize: both;
-  overflow: hidden;
-  border-bottom: 0.25rem solid white;
-  border-width: 50%;
+  overflow: auto;
+  border: 0.25rem solid transparent;
   height: 300px;
   width: auto;
-  padding: 0.5rem;
+  padding: 1.25rem;
 }
 
 
@@ -225,7 +224,7 @@ img:hover, img:focus {
 
 ::-webkit-resizer {
   border: dashed  #888888;
-  border-width: 0 3px 3px 0;
+  border-width: 0 5px 5px 0;
   display: block;
 }
 
