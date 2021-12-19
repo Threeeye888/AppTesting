@@ -181,11 +181,12 @@ html {
 }
 
 ::-webkit-resizer {
-  border: dashed #888888;
+  background-color: #808080;
+  border: solid white;
   border-width: 0 3px 3px 0;
   display: block;
-  outline: 3px solid white;
-  outline-offset: ;
+  outline: 8px solid  #00FA9A;
+
 }
 
 
