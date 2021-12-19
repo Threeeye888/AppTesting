@@ -219,12 +219,11 @@ img:hover, img:focus {
   border: 0.25rem solid transparent;
   height: 300px;
   width: 500;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 ::-webkit-resizer {
-  border: dashed  #888888;
-  border-width: 0 5px 5px 0;
+  background-color:#888888;  
   display: block;
 }
 
