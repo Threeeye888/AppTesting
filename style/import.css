@@ -223,12 +223,9 @@ img:hover, img:focus {
 }
 
 ::-webkit-resizer {
-  background-color: #888888 ;  
-  border-radius: 50%;
-  box-sizing: content-box;
-  box-shadow: 0 0 1rem #00FA9A;
-
-  
+  border: dashed  #888888;
+  border-width: 0 3px 3px 0;
+  display: block;
 }
 
 
