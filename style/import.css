@@ -176,16 +176,15 @@ html {
  
   height: 300px;
   width: auto;
-  padding: 0.8rem;
+  padding: 0.9rem;
   
 }
 
 ::-webkit-resizer {
   background-color: #808080;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: block;
-  outline: 8px solid  #00FA9A;
+  background-size: auto;  
+  display: !important;
+  outline: 25px solid transparent;
 
 }
 
