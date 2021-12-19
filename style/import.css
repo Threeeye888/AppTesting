@@ -184,7 +184,8 @@ html {
   border: dashed #888888;
   border-width: 0 3px 3px 0;
   display: block;
-  outline: 25px solid white;
+  outline: 3px solid white;
+  outline-offset: ;
 }
 
 
