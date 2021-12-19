@@ -176,12 +176,14 @@ html {
  
   height: 300px;
   width: auto;
-  padding: 1rem;
+  padding: 0.8rem;
   
 }
 
 ::-webkit-resizer {
-  background-color: white;
+  border: dashed #888888;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
 }
 
 
