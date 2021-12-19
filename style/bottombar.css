@@ -5,10 +5,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 43px;
+  height: 55px;
   z-index: 3;
   display: flex;
   justify-content: space-around;
+  border-top: 0.05rem solid #ffffff;
 }
 
 .navbar a {
@@ -16,21 +17,19 @@
   display: block;
   color:  #fffafa;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px ;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.35rem;
   border-radius: 15px;
-  jsutify justify-content: space-around;
+  justify-content: space-around;
+ 
 }
 
 .navbar a:hover {
  
   color: #b2beb5;
 }
-.navbar a:active {
- 
-  color: #b2beb5;
-}
+
 
 .main {
   padding: 16px;

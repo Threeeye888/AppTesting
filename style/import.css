@@ -14,13 +14,11 @@ body {
 
 #mainbody {
   padding-top: 50px;
+  
 }
 
-.sbtesting {
-  width: 100px;
-  height:100px;
-  padding: 10px;
-}
+
+
 
 #wlabel {
   font-size: 10px;
@@ -42,20 +40,20 @@ body {
   transition: 0.6s;
   padding-top: 60px;
   align-content: space-evenly;
+  box-shadow: 0 0 15px #00FA9A ;
 
 }
 
 .sidebar img {
-  width: 100px;
-  height:100px;
-  padding: 10px;
+  width: 7rem;
+  height:7rem;
+  padding-left:0.6rem;
+  padding-right: 0.6rem;
+  ;
+ 
+  
 }
 
-.sidebar #btcw {
-  width: 100px;
-  height:100px;
-  padding: 10px;
-}
 
 
 
@@ -70,6 +68,7 @@ body {
 
 .sidebar a:hover {
   color: #f1f1f1;
+  
 }
 
 
@@ -87,7 +86,8 @@ body {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  border: 0.25rem solid #00FA9A;
+  opacity: 0.8;
 }
 
 #main {
@@ -105,26 +105,61 @@ html {
   height: 1500px;
 }
 
-.wrap {
-  padding-left:25px;
+.wrapleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: left;
+  padding: none;
+  overflow: hidden; 
+
+}
+
+.wrapright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: right;
+  padding: none;
+
+
+}
+
+.sb-container {
+  height: 11rem;
+  margin: auto;
+  left: 0;
+  padding: 0.6rem;
+}
+
+.sb-container h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.25rem;
+  font-size: 0.75rem;
+  color: white;  
+  font-family: Courier New, monospace;
 }
 
 .sidebar-top {
   
-  height: 75px;
+  height:5rem;
   
 }
-.chartpadding {
+.padding {
 
   padding-left: 15px;
   padding-right: 15px;
 
 }
 
-.label {
-  margin-left: 30px;
+.label {  
   color:  white;
-  font-size: 25px;
+  font-size: 1.6rem;
+  font-style: bold;
+  overflow: hidden; 
+  white-space: nowrap;
+
 
 }
 
@@ -137,17 +172,67 @@ html {
 
 .resize {  
   resize: both;
-  overflow: auto;
-  background-color: 10px solid white;
-
+  overflow: hidden;
+  border: 0.25rem solid transparent;
+  height: 300px;
+  width: auto;
+  padding: 1rem;
 }
 
-.resizeind {
-  width: 200px;
-  height: 390px;
+
+h2 {
+  color: white;
+  
+  text-align: center;
+}
+
+#remove {
+  height: 2rem;
+  width: 2rem;
+ background-color:  #282828;
+ border: 0.1rem solid white;
+ border-radius: 5px;
+ position: absolute; 
+ margin-top: -2rem;
+ z-index: 1;
+}
+
+#.remove:hover {
+  background-color: white;
+}
+
+#remove a {
+  color: #00FA9A  ;
+}
+
+
+img:hover, img:focus {
+  border: 0.25rem solid #00FA9A ;  
+  
+
+ 
+}
+
+.resizeth {  
   resize: both;
-  overflow: auto;
+  overflow: hidden;
+  border: 0.25rem solid transparent;
+  height: 300px;
+  width: 500;
+  padding: 1rem;
 }
+
+script {
+  scroll-behavior: none;
+}
+
+::-webkit-resizer {    
+    border:dashed #585858;
+    border-width: 0 3px 3px 0;    
+    background: transparent;    
+
+}
+
 
 .headerarea {
   height: 200px;
@@ -178,3 +263,84 @@ option {
 option, a {
   color:white ;
 }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  border: 0.25rem solid #00FA9A ;
+ 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {border:0.25rem solid #00FA9A  ;color: white; font-weight: bold;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/*/////////////////////////////////////////////////////
+
+
+/* Dropdown button on hover & focus */
+.dropbtnt:hover, .dropbtnt:focus {
+border: 0.25rem solid #00FA9A; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownt {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentt {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-contentt a {
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contentt a:hover {border:0.25rem solid #00FA9A  ;  color: white; font-weight: bold;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.showt {display:block;}
+
+

@@ -5,8 +5,8 @@ var menuState = 0 // close
 function open_close() {
   if(menuState === 0){
      menuState = 1;
-     document.getElementById("mySidebar").style.width = "300px";
-     document.getElementById("main").style.marginLeft = "300px";
+     document.getElementById("mySidebar").style.width = "20rem";
+     document.getElementById("main").style.marginLeft = "20rem";
     
   }
   else {
