@@ -222,7 +222,11 @@ img:hover, img:focus {
   padding: 1rem;
 }
 
-
+::-webkit-resizer {
+  border: dashed  #888888;
+  border-width: 0 15px 15px 0;
+  display: inline-block;
+}
 
 
 
