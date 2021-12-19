@@ -222,16 +222,12 @@ img:hover, img:focus {
   padding: 1rem;
 }
 
-script {
-  scroll-behavior: none;
-}
+
 
 ::-webkit-resizer {    
     border:dashed #585858;
     border-width: 0 0.18em 0.18em 0;    
-    background: transparent;
-    height: 1rem ;
-    width: 1rem ;    
+    background: 1px 1px white;    
 
 }
 
