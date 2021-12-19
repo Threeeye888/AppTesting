@@ -148,8 +148,8 @@ html {
 }
 .padding {
 
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 
 }
 
@@ -178,6 +178,10 @@ html {
   width: auto;
   padding: 0.5rem;
   background-color: #808080;
+}
+
+::-webkit-resizer {
+  background-color: red;
 }
 
 
