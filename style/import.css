@@ -181,10 +181,10 @@ html {
 }
 
 ::-webkit-resizer {
-  background-color: #808080;
-  background-size: auto;  
+  
+    
   display: inline-block;
-  outline: 25px solid transparent;
+  
 
 }
 
