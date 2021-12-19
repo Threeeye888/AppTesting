@@ -224,12 +224,7 @@ img:hover, img:focus {
 
 
 
-::-webkit-resizer {    
-    border:dashed #585858;
-    border-width: 0 0.18em 0.18em 0;    
-    background: 1px 1px white;    
 
-}
 
 
 .headerarea {
