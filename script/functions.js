@@ -75,3 +75,14 @@ function closeMc3() {
    mc3.style.display = "none";
 }
 ////
+
+//Append/Close Top Cryptos//
+var th = document.getElementById('th')
+
+function showTh() {
+   th.style.display = "block";
+}
+function closeTh() {
+   th.style.display = "none";
+}
+////

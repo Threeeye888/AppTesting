@@ -17,3 +17,17 @@ function open_close() {
   }
   console.log(menuState);
 }
+
+function dropDown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+
+
+//DropDown//
+function dropDown2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+

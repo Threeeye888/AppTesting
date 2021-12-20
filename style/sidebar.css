@@ -1,0 +1,123 @@
+.openbtn {
+  font-size: 20px;  
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;  
+  border-radius: 18px;
+  border: none;
+  position: fixed;
+  z-index: 3;
+
+}
+
+.openbtn:active {
+  border: 0.125rem solid #00FA9A;
+  opacity: 0.8;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index:2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 60px;
+  align-content: space-evenly;
+  box-shadow: 0 0 15px #00FA9A ;
+
+}
+
+.sidebar-top {
+  
+  height:5rem;
+  
+}
+
+.wrapleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: left;
+  padding: none;
+  overflow: hidden; 
+
+}
+
+.wrapright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  float: right;
+  padding: none;
+
+
+}
+
+.sb-container {
+  height: 11rem;
+  margin: auto;
+  left: 0;
+  padding: 0.6rem;
+}
+
+.sb-container h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: ;
+  font-size: 0.75rem;
+  color: white;  
+  font-family: Courier New, monospace;
+}
+
+.sidebar img {
+  width: 7rem;
+  height:7rem;
+  padding-left:0.6rem;
+  padding-right: 0.6rem;
+  ; 
+  
+}
+
+img:hover, img:focus {
+  border: 0.25rem solid #00FA9A ; 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  border: 0.25rem solid #00FA9A ; 
+}
+
+.dropbtn2:hover, .dropbtnt:focus {
+border: 0.25rem solid #00FA9A; 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+

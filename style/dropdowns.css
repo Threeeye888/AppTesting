@@ -1,0 +1,160 @@
+/*///////////////////////////// Chart Dropdown /////////////////////////////////*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 12em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  display: block;
+}
+
+.close {  
+  font-size: 1.5em;  
+  margin-left: 3.28rem;
+  color:  #484848;  
+}
+
+.close:active {
+  font-size: 1.5em;  
+  margin-left: 3.28rem;
+  color: #00FA9A;  
+}
+
+.ddbtn {  
+  font-weight: bold;
+  height: 1.5rem;
+  background-color: black;
+  border:  0.025rem solid #00FA9A;  
+  border-radius: 0.2rem;
+  color: white;
+  margin-left:2.55rem;
+}
+
+.ddbtn:active {
+  
+  font-weight: bold;
+  height: 1.5rem;
+  background-color: #00FA9A;
+  border:none;
+  border-radius: 0.2rem;
+  color: black;
+  margin-left:2.55rem;
+}
+
+.dropdown-content a:hover {border:0.25rem solid #00FA9A  ;color: white; font-weight: bold;}
+
+.show {
+  display:block;
+}
+
+#change {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+#change2 {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+#change3 {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////*/
+
+
+/*////////////////////////// MiniChart Dropdown ///////////////////////////*/
+
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+}
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.87rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {
+  border:0.25rem solid #00FA9A  ;  
+  color: white; 
+  font-weight: bold;
+}
+
+.show2 {
+  display:block;
+}
+
+#mcchange {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+#mcchange2 {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+#mcchange3 {
+  font-weight: bold;
+  font-size: 1.38rem;
+  margin-top: -0.02rem;
+  margin-left: -0.37rem;
+  color: transparent;  
+}
+
+/*////////////////////////////////////////////////////*/
