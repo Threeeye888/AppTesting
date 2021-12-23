@@ -1,3 +1,4 @@
+
  new TradingView.widget(
   {
   "width": "100%",

@@ -1,4 +1,3 @@
-
 document.getElementById("openbtn1").addEventListener("click", open_close);
 
 var menuState = 0 // close
@@ -29,5 +28,3 @@ function dropDown() {
 function dropDown2() {
   document.getElementById("myDropdown2").classList.toggle("show2");
 }
-
-

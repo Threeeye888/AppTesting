@@ -1,4 +1,4 @@
-   function changeColor() {
+  function changeColor() {
       document.getElementById('change').style.color = "#00FA9A";
       document.getElementById('change').style.textShadow = "0 0 0.6rem #00FA9A";       
     }
